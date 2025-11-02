@@ -1,10 +1,19 @@
-public class Grocery{
+import java.util.ArrayList;
 
-	public int items(){
-		return 0;
+public class Grocery {
+
+	public ArrayList<String> addItems(ArrayList<String> myLists, String userInput) {
+ 	myLists.add(userInput);
+
+        return myLists;
+    }
+	
+	public ArrayList<String> removeItems(ArrayList<String> myLists, String toRemove){
+
+       	myLists.remove(toRemove);
+
+        return myLists;
+	
 	}
 
-	public int addItems(String item1, String item2){
-		return 2;
-	}
 }
